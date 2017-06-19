@@ -852,6 +852,12 @@ Some of the useful methods of Throwable class are:
 
 ### Recommendations
 
+#### Buffer Overflow
+
+Java protects the programmer from the common programming error called "Buffer Overflow" by consistently throwing ArrayIndexOutofBounds exceptions whenever an attempt to access an array outside its bounds is made.
+
+Java defends the system from the common hacking technique called "Buffer Overflow" by making sure that attempts to access outside the bounds of allocated memory does not cause memory corruption.
+
 #### Categorize exceptions by cause
 
 Since exceptions come with a *stacktrace*, it is more useful to categorize them by subsystem causing failure, rather than by which application module the failure occurred in. For example, categorizing exceptions into SQL, file access, or configuration types is generally far more useful than separate types for Customer, Account, and Order modules.
